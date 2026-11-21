@@ -1,0 +1,718 @@
+/* =====================================================================
+   SHOP CONTENT — edit ONLY this object to reuse the site for another shop.
+   Everything visible on the page (both languages) comes from here.
+   hours: index 0 = Sunday … 6 = Saturday, ["HH:MM", "HH:MM"] in Dubai time, or null if closed.
+   hoursGroups: how days are grouped in the hours table. See README.md.
+   ===================================================================== */
+const SHOP = {
+  "name": "Groom Studio Gents Salon",
+  "siteUrl": "https://tanish0212.github.io/groom-studio-demo/",
+  "schemaType": "HairSalon",
+  "phoneDisplay": "+971 56 217 4271",
+  "phoneHref": "tel:+971562174271",
+  "phoneIntl": "+971562174271",
+  "whatsappNumber": "971562174271",
+  "directionsUrl": "https://www.google.com/maps/search/?api=1&query=Groom+Studio+Gents+Salon+UW+Mall+Mankhool+Road+Dubai",
+  "reviewsUrl": "https://www.google.com/maps/search/?api=1&query=Groom+Studio+Gents+Salon+UW+Mall+Mankhool+Road+Dubai",
+  "mapEmbedUrl": "https://maps.google.com/maps?q=Groom%20Studio%20Gents%20Salon%2C%20UW%20Mall%2C%20Mankhool%20Road%2C%20Dubai&output=embed",
+  "address": {
+    "street": "SM-11, Mezzanine Floor, UW Mall, Mankhool Road",
+    "city": "Dubai",
+    "country": "AE"
+  },
+  "timeZone": "Asia/Dubai",
+  "hours": [
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ],
+    [
+      "10:00",
+      "23:00"
+    ]
+  ],
+  "hoursGroups": [
+    {
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "key": "daily"
+    }
+  ],
+  "rating": {
+    "value": "4.8",
+    "count": 261
+  },
+  "showDemoBanner": true,
+  "credit": "Tanish",
+  "images": {
+    "hero": {
+      "src": "images/studio.svg",
+      "en": "Line drawing of a modern grooming studio: a rounded mirror, a salon chair and a pendant lamp",
+      "ar": "رسم خطي لاستوديو عناية عصري: مرآة دائرية الأطراف وكرسي صالون ومصباح معلّق"
+    }
+  },
+  "stepIcons": [
+    "i-wa",
+    "i-store",
+    "i-mirror"
+  ],
+  "services": [
+    {
+      "image": "images/clippers.svg",
+      "en": {
+        "name": "Haircuts",
+        "desc": "Men's haircuts. Tell us the look you're after.",
+        "alt": "Line drawing of electric hair clippers",
+        "ask": "a haircut"
+      },
+      "ar": {
+        "name": "قص الشعر",
+        "desc": "قصات شعر رجالية. أخبرنا بالإطلالة التي تريدها.",
+        "alt": "رسم خطي لماكينة قص الشعر",
+        "ask": "قص الشعر"
+      }
+    },
+    {
+      "image": "images/long-hair.svg",
+      "en": {
+        "name": "Long-hair cuts & styling",
+        "desc": "Cuts and styling for longer hair too.",
+        "alt": "Line drawing of a hair dryer with air lines",
+        "ask": "a long-hair cut and styling"
+      },
+      "ar": {
+        "name": "قص وتصفيف الشعر الطويل",
+        "desc": "قص وتصفيف للشعر الطويل أيضًا.",
+        "alt": "رسم خطي لمجفف شعر مع خطوط الهواء",
+        "ask": "قص وتصفيف الشعر الطويل"
+      }
+    },
+    {
+      "image": "images/shave.svg",
+      "en": {
+        "name": "Shaves",
+        "desc": "A shave, on its own or with your haircut.",
+        "alt": "Line drawing of an open straight razor",
+        "ask": "a shave"
+      },
+      "ar": {
+        "name": "الحلاقة",
+        "desc": "حلاقة الذقن، وحدها أو مع قصة الشعر.",
+        "alt": "رسم خطي لموس حلاقة مفتوح",
+        "ask": "الحلاقة"
+      }
+    },
+    {
+      "image": "images/beard-care.svg",
+      "en": {
+        "name": "Beard care",
+        "desc": "Beard care to keep yours in shape.",
+        "alt": "Line drawing of a dropper bottle beside a beard comb",
+        "ask": "beard care"
+      },
+      "ar": {
+        "name": "العناية باللحية",
+        "desc": "عناية باللحية لتبقى مرتبة.",
+        "alt": "رسم خطي لزجاجة بقطّارة بجانب مشط لحية",
+        "ask": "العناية باللحية"
+      }
+    },
+    {
+      "image": "images/facial.svg",
+      "en": {
+        "name": "Facials",
+        "desc": "Facials for men. Ask us about the options.",
+        "alt": "Line drawing of a relaxed face with a towel wrap and a mask outline",
+        "ask": "a facial"
+      },
+      "ar": {
+        "name": "تنظيف البشرة",
+        "desc": "تنظيف بشرة للرجال. اسألنا عن الخيارات.",
+        "alt": "رسم خطي لوجه مسترخٍ مع منشفة على الرأس وقناع",
+        "ask": "تنظيف البشرة"
+      }
+    },
+    {
+      "image": "images/package.svg",
+      "en": {
+        "name": "Grooming packages",
+        "desc": "Packages for men's grooming. Message us to see what's included.",
+        "alt": "Line drawing of an open box holding a comb, a bottle and a brush",
+        "ask": "your grooming packages"
+      },
+      "ar": {
+        "name": "باقات العناية",
+        "desc": "باقات للعناية الرجالية. راسلنا لتعرف ما تتضمنه.",
+        "alt": "رسم خطي لصندوق مفتوح فيه مشط وزجاجة وفرشاة",
+        "ask": "باقات العناية"
+      }
+    }
+  ],
+  "reviews": [
+    "Place is very clean, friendly staff and very accurate prices with packages available for men's grooming.",
+    "The staff were professional, the ambiance was pleasant, and the overall service was really worth the price.",
+    "I had a great experience with my haircut!"
+  ],
+  "text": {
+    "en": {
+      "skip": "Skip to content",
+      "navLabel": "Main",
+      "navServices": "Services",
+      "navHow": "How it works",
+      "navReviews": "Reviews",
+      "navVisit": "Visit",
+      "langLabel": "Language",
+      "waCta": "Message on WhatsApp",
+      "waShort": "WhatsApp",
+      "callCta": "Call the studio",
+      "directions": "Get Directions",
+      "newTab": "(opens in a new tab)",
+      "ratingLine": "{rating} on Google · {count} reviews",
+      "statusOpen": "Open now · until {time}",
+      "statusOpensToday": "Closed now · opens today at {time}",
+      "statusReopens": "Closed now · reopens today at {time}",
+      "closed": "Closed",
+      "statusOpensTomorrow": "Closed now · opens tomorrow at {time}",
+      "statusOpensLater": "Closed now · opens {day} at {time}",
+      "am": "AM",
+      "pm": "PM",
+      "days": [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+      ],
+      "today": "Today",
+      "stripAria": "Quick facts",
+      "stripServicesLabel": "Services",
+      "stripHoursLabel": "Hours",
+      "stripRatingLabel": "Google rating",
+      "stripRating": "{rating} / 5 · {count} reviews",
+      "servicesKicker": "Services",
+      "quoteCta": "Ask on WhatsApp",
+      "quoteNote": "Prices aren't listed online. Message us on WhatsApp for prices.",
+      "howKicker": "How it works",
+      "reviewsKicker": "Reviews",
+      "basedOn": "{count} reviews on Google",
+      "reviewLabel": "Google review",
+      "readMore": "Read more on Google",
+      "visitKicker": "Visit",
+      "addressLabel": "Address",
+      "hoursLabel": "Opening hours",
+      "phoneLabel": "Phone & WhatsApp",
+      "footerContact": "Contact",
+      "credit": "Website by {credit}",
+      "pageTitle": "Groom Studio Gents Salon · Men's grooming at UW Mall, next to BurJuman",
+      "metaDescription": "Men's grooming salon at UW Mall, Mankhool Road, next to BurJuman: haircuts, long-hair styling, shaves, beard care, facials and grooming packages. Open every day. Rated 4.8 on Google.",
+      "demoBanner": "Demo preview – made for Groom Studio Gents Salon. Not the official website yet.",
+      "brandName": "Groom Studio",
+      "brandSub": "Gents Salon · UW Mall",
+      "waMessage": "Hello Groom Studio, I found you on your website and I'd like to ask about your services.",
+      "waMessageAbout": "Hello Groom Studio, I found you on your website and I'd like to ask about {service}.",
+      "waAria": "Message Groom Studio Gents Salon on WhatsApp",
+      "heroEyebrow": "Men's grooming · Next to BurJuman",
+      "heroTitle": [
+        "Cut. Shave.",
+        "Groom."
+      ],
+      "heroSub": "Haircuts, long-hair styling, shaves, beard care, facials and grooming packages at UW Mall on Mankhool Road. Open every day.",
+      "heroPlace": "UW Mall, Mankhool Road, next to BurJuman",
+      "heroCaption": "SM-11 · Mezzanine floor",
+      "stripServices": "Haircuts · Long hair · Shaves · Beard care · Facials · Packages",
+      "groups": {
+        "daily": "Every day"
+      },
+      "groupsShort": {
+        "daily": "Daily"
+      },
+      "servicesTitle": "Everything for men's grooming.",
+      "servicesIntro": "Tap any service to ask us about it on WhatsApp.",
+      "howTitle": "From message to mirror.",
+      "steps": [
+        {
+          "title": "Message us on WhatsApp",
+          "text": "Ask about a service, a package, or prices."
+        },
+        {
+          "title": "Find us at UW Mall",
+          "text": "Shop SM-11 on the mezzanine floor, next to BurJuman."
+        },
+        {
+          "title": "Take the chair",
+          "text": "Get your cut, shave, beard care or facial."
+        }
+      ],
+      "reviewsTitle": "What customers say.",
+      "visitTitle": "Visit the studio.",
+      "addressLines": [
+        "SM-11, Mezzanine Floor, UW Mall",
+        "Mankhool Road, next to BurJuman",
+        "Dubai"
+      ],
+      "mapTitle": "Map showing Groom Studio Gents Salon at UW Mall, Mankhool Road, Dubai",
+      "ctaTitle": "Time for a fresh look?",
+      "ctaSub": "Send us a message on WhatsApp, or call the studio.",
+      "footerName": "Groom Studio Gents Salon",
+      "footerTag": "Men's grooming at UW Mall, next to BurJuman, Dubai."
+    },
+    "ar": {
+      "skip": "انتقل إلى المحتوى",
+      "navLabel": "القائمة الرئيسية",
+      "navServices": "الخدمات",
+      "navHow": "كيف نعمل",
+      "navReviews": "التقييمات",
+      "navVisit": "الموقع",
+      "langLabel": "اللغة",
+      "waCta": "راسلنا عبر واتساب",
+      "waShort": "واتساب",
+      "callCta": "اتصل بالصالون",
+      "directions": "احصل على الاتجاهات",
+      "newTab": "(يفتح في نافذة جديدة)",
+      "ratingLine": "{rating} على جوجل · {count} تقييمًا",
+      "statusOpen": "مفتوح الآن · حتى {time}",
+      "statusOpensToday": "مغلق الآن · يفتح اليوم الساعة {time}",
+      "statusReopens": "مغلق الآن · يعيد الفتح اليوم الساعة {time}",
+      "closed": "مغلق",
+      "statusOpensTomorrow": "مغلق الآن · يفتح غدًا الساعة {time}",
+      "statusOpensLater": "مغلق الآن · يفتح يوم {day} الساعة {time}",
+      "am": "صباحًا",
+      "pm": "مساءً",
+      "days": [
+        "الأحد",
+        "الاثنين",
+        "الثلاثاء",
+        "الأربعاء",
+        "الخميس",
+        "الجمعة",
+        "السبت"
+      ],
+      "today": "اليوم",
+      "stripAria": "معلومات سريعة",
+      "stripServicesLabel": "الخدمات",
+      "stripHoursLabel": "ساعات العمل",
+      "stripRatingLabel": "التقييم على جوجل",
+      "stripRating": "{rating} من 5 · {count} تقييمًا",
+      "servicesKicker": "الخدمات",
+      "quoteCta": "اسأل عبر واتساب",
+      "quoteNote": "الأسعار غير معروضة على الموقع. راسلونا عبر واتساب لمعرفة الأسعار.",
+      "howKicker": "كيف نعمل",
+      "reviewsKicker": "التقييمات",
+      "basedOn": "{count} تقييمًا على جوجل",
+      "reviewLabel": "تقييم من جوجل",
+      "readMore": "اقرأ المزيد على جوجل",
+      "visitKicker": "زورونا",
+      "addressLabel": "العنوان",
+      "hoursLabel": "ساعات العمل",
+      "phoneLabel": "الهاتف وواتساب",
+      "footerContact": "تواصل معنا",
+      "credit": "تصميم الموقع: {credit}",
+      "pageTitle": "صالون جروم ستوديو للرجال · عناية رجالية في يو دبليو مول بجانب برجمان",
+      "metaDescription": "صالون عناية رجالية في يو دبليو مول، شارع المنخول، بجانب برجمان: قص الشعر، تصفيف الشعر الطويل، الحلاقة، العناية باللحية، تنظيف البشرة وباقات العناية. مفتوح يوميًا. تقييم 4.8 على جوجل.",
+      "demoBanner": "نسخة تجريبية – صُممت خصيصًا لصالون جروم ستوديو للرجال. ليست الموقع الرسمي بعد.",
+      "brandName": "جروم ستوديو",
+      "brandSub": "صالون رجالي · يو دبليو مول",
+      "waMessage": "مرحبًا جروم ستوديو، وجدتكم عبر موقعكم الإلكتروني وأودّ الاستفسار عن خدماتكم.",
+      "waMessageAbout": "مرحبًا جروم ستوديو، وجدتكم عبر موقعكم الإلكتروني وأودّ الاستفسار عن {service}.",
+      "waAria": "راسل صالون جروم ستوديو للرجال عبر واتساب",
+      "heroEyebrow": "عناية رجالية · بجانب برجمان",
+      "heroTitle": [
+        "قص. حلاقة.",
+        "عناية."
+      ],
+      "heroSub": "قص الشعر، تصفيف الشعر الطويل، الحلاقة، العناية باللحية، تنظيف البشرة وباقات العناية في يو دبليو مول على شارع المنخول. مفتوح يوميًا.",
+      "heroPlace": "يو دبليو مول، شارع المنخول، بجانب برجمان",
+      "heroCaption": "SM-11 · طابق الميزانين",
+      "stripServices": "قص الشعر · الشعر الطويل · الحلاقة · اللحية · تنظيف البشرة · الباقات",
+      "groups": {
+        "daily": "كل يوم"
+      },
+      "groupsShort": {
+        "daily": "يوميًا"
+      },
+      "servicesTitle": "كل ما تحتاجه للعناية الرجالية.",
+      "servicesIntro": "اضغط على أي خدمة لتسألنا عنها عبر واتساب.",
+      "howTitle": "من الرسالة إلى المرآة.",
+      "steps": [
+        {
+          "title": "راسلنا عبر واتساب",
+          "text": "اسأل عن خدمة أو باقة أو عن الأسعار."
+        },
+        {
+          "title": "تجدنا في يو دبليو مول",
+          "text": "المحل SM-11 في طابق الميزانين، بجانب برجمان."
+        },
+        {
+          "title": "تفضّل بالجلوس",
+          "text": "احصل على قصتك أو حلاقتك أو العناية بلحيتك أو تنظيف بشرتك."
+        }
+      ],
+      "reviewsTitle": "ماذا يقول العملاء.",
+      "visitTitle": "زُر الصالون.",
+      "addressLines": [
+        "SM-11، طابق الميزانين، يو دبليو مول",
+        "شارع المنخول، بجانب برجمان",
+        "دبي"
+      ],
+      "mapTitle": "خريطة توضح موقع صالون جروم ستوديو للرجال في يو دبليو مول، شارع المنخول، دبي",
+      "ctaTitle": "حان وقت إطلالة جديدة؟",
+      "ctaSub": "أرسل لنا رسالة عبر واتساب، أو اتصل بالصالون.",
+      "footerName": "صالون جروم ستوديو للرجال",
+      "footerTag": "عناية رجالية في يو دبليو مول، بجانب برجمان، دبي."
+    }
+  }
+};
+
+/* =====================================================================
+   SITE LOGIC — no need to edit below this line.
+   ===================================================================== */
+(function () {
+  "use strict";
+
+  const LANG_KEY = "site-lang";
+  const root = document.documentElement;
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let lang = "en";
+
+  try {
+    const saved = localStorage.getItem(LANG_KEY);
+    if (saved === "en" || saved === "ar") lang = saved;
+  } catch (e) { /* storage unavailable — default to English */ }
+
+  const $ = (sel, ctx = document) => ctx.querySelector(sel);
+  const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel));
+  const t = () => SHOP.text[lang];
+
+  function fmt(str, extra) {
+    let out = String(str)
+      .replace(/\{rating\}/g, SHOP.rating.value)
+      .replace(/\{count\}/g, SHOP.rating.count)
+      .replace(/\{credit\}/g, SHOP.credit)
+      .replace(/\{name\}/g, SHOP.name);
+    if (extra) for (const [k, v] of Object.entries(extra)) out = out.split("{" + k + "}").join(v);
+    return out;
+  }
+
+  function el(tag, attrs, children) {
+    const node = document.createElement(tag);
+    if (attrs) {
+      for (const [k, v] of Object.entries(attrs)) {
+        if (v === null || v === undefined || v === false) continue;
+        if (k === "class") node.className = v;
+        else if (k === "text") node.textContent = v;
+        else node.setAttribute(k, v === true ? "" : v);
+      }
+    }
+    (children || []).forEach((c) => node.append(c));
+    return node;
+  }
+
+  function useIcon(id, size) {
+    const s = size || 20;
+    const span = el("span", { class: "icon", "aria-hidden": "true" });
+    span.innerHTML = '<svg viewBox="0 0 24 24" width="' + s + '" height="' + s + '"><use href="#' + id + '"/></svg>';
+    return span;
+  }
+
+  function stars(value) {
+    const wrap = el("span", { class: "stars", "aria-hidden": "true" });
+    const full = Math.round(parseFloat(value));
+    for (let i = 0; i < 5; i++) {
+      wrap.insertAdjacentHTML("beforeend",
+        '<svg viewBox="0 0 20 20" width="16" height="16"><path d="M10 1.8l2.5 5.3 5.8.7-4.3 4 1.1 5.7L10 14.7l-5.1 2.8L6 11.8 1.7 7.8l5.8-.7Z" ' +
+        (i < full ? 'fill="currentColor"' : 'fill="none" stroke="currentColor" stroke-width="1.3"') + "/></svg>");
+    }
+    return wrap;
+  }
+
+  const ltr = (text) => el("span", { dir: "ltr", class: "ltr num", text });
+
+  /* ---------- WhatsApp links ---------- */
+  function waUrl(service) {
+    const tx = t();
+    const msg = service ? fmt(tx.waMessageAbout, { service }) : tx.waMessage;
+    return "https://wa.me/" + SHOP.whatsappNumber + "?text=" + encodeURIComponent(msg);
+  }
+
+  /* ---------- Hours + open / closed badge (shop time zone) ---------- */
+  const toMin = (hhmm) => { const [h, m] = hhmm.split(":").map(Number); return h * 60 + m; };
+  // A day is null (closed), one range ["HH:MM","HH:MM"], or several ranges [["09:30","14:00"],["17:00","22:30"]].
+  // "24:00" = closes at midnight.
+  const rangesOf = (day) => { const h = SHOP.hours[day]; if (!h) return []; return typeof h[0] === "string" ? [h] : h; };
+
+  function timeLabel(hhmm) {
+    const tx = t();
+    const [h, m] = hhmm.split(":").map(Number);
+    const hh = h % 24;
+    const h12 = hh % 12 === 0 ? 12 : hh % 12;
+    return h12 + (m ? ":" + String(m).padStart(2, "0") : "") + " " + (hh < 12 ? tx.am : tx.pm);
+  }
+
+  function nowInShopTZ() {
+    const parts = new Intl.DateTimeFormat("en-US", {
+      timeZone: SHOP.timeZone, weekday: "short", hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+    }).formatToParts(new Date());
+    const get = (type) => parts.find((p) => p.type === type).value;
+    const day = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday"));
+    return { day, min: Number(get("hour")) * 60 + Number(get("minute")) };
+  }
+
+  function shopStatus() {
+    const now = nowInShopTZ();
+    const today = rangesOf(now.day);
+    const cur = today.find((r) => now.min >= toMin(r[0]) && now.min < toMin(r[1]));
+    if (cur) return { open: true, key: "statusOpen", time: cur[1], day: now.day };
+    const next = today.find((r) => now.min < toMin(r[0]));
+    if (next) {
+      const onBreak = today.some((r) => now.min >= toMin(r[1]));
+      return { open: false, key: onBreak ? "statusReopens" : "statusOpensToday", time: next[0], day: now.day };
+    }
+    for (let i = 1; i <= 7; i++) {
+      const d = (now.day + i) % 7;
+      const r = rangesOf(d);
+      if (r.length) {
+        return { open: false, key: i === 1 ? "statusOpensTomorrow" : "statusOpensLater", time: r[0][0], day: d };
+      }
+    }
+    return { open: false, key: "statusOpensToday", time: "00:00", day: now.day };
+  }
+
+  function rangeLabels(day) {
+    const r = rangesOf(day);
+    return r.length ? r.map((h) => timeLabel(h[0]) + " – " + timeLabel(h[1])) : [t().closed];
+  }
+
+  function renderStatus() {
+    const tx = t();
+    const s = shopStatus();
+    const text = fmt(tx[s.key], { time: timeLabel(s.time), day: tx.days[s.day] });
+    $$(".js-status").forEach((node) => {
+      node.dataset.state = s.open ? "open" : "closed";
+      $(".status-text", node).textContent = text;
+    });
+    const today = nowInShopTZ().day;
+    $$(".js-hours tr").forEach((row) => {
+      const isToday = row.dataset.days.split(",").map(Number).includes(today);
+      row.classList.toggle("is-today", isToday);
+      const flag = $(".today-flag", row);
+      if (flag) flag.hidden = !isToday;
+    });
+  }
+
+  const ltrIfEn = (text) => (lang === "ar" ? document.createTextNode(text) : ltr(text));
+
+  function renderHours() {
+    const tx = t();
+    $(".js-hours").replaceChildren(el("tbody", null, SHOP.hoursGroups.map((g) => el("tr", { "data-days": g.days.join(",") }, [
+      el("th", { scope: "row" }, [
+        document.createTextNode(tx.groups[g.key] + " "),
+        el("span", { class: "today-flag", text: tx.today, hidden: true }),
+      ]),
+      el("td", null, rangeLabels(g.days[0]).map((l) => el("span", { class: "range" }, [ltrIfEn(l)]))),
+    ]))));
+    $(".js-strip-hours").replaceChildren(...SHOP.hoursGroups.map((g) =>
+      el("span", { class: "strip-line" }, [document.createTextNode(tx.groupsShort[g.key] + " "),
+        ...rangeLabels(g.days[0]).flatMap((l, i) => (i ? [document.createTextNode(", "), ltrIfEn(l)] : [ltrIfEn(l)]))])));
+  }
+
+  /* ---------- Render ---------- */
+  function renderText() {
+    const tx = t();
+    $$("[data-t]").forEach((node) => { if (tx[node.dataset.t] !== undefined) node.textContent = fmt(tx[node.dataset.t]); });
+    $$("[data-shop]").forEach((node) => { node.textContent = SHOP[node.dataset.shop]; });
+    $$("[data-t-aria]").forEach((node) => { node.setAttribute("aria-label", fmt(tx[node.dataset.tAria])); });
+
+    $$(".js-tel").forEach((a) => { a.href = SHOP.phoneHref; });
+    $$(".js-wa").forEach((a) => { a.href = waUrl(); a.target = "_blank"; a.rel = "noopener"; });
+    $$(".js-dir").forEach((a) => { a.href = SHOP.directionsUrl; a.target = "_blank"; a.rel = "noopener"; });
+    $$(".js-reviews").forEach((a) => { a.href = SHOP.reviewsUrl; a.target = "_blank"; a.rel = "noopener"; });
+    $$(".js-newtab").forEach((n) => { n.textContent = " " + tx.newTab; });
+    $$(".js-phone").forEach((n) => { n.replaceChildren(ltr(SHOP.phoneDisplay)); });
+
+    document.title = tx.pageTitle;
+    const md = $('meta[name="description"]');
+    if (md) md.setAttribute("content", tx.metaDescription);
+
+    const banner = $(".demo-banner");
+    if (banner) banner.hidden = !SHOP.showDemoBanner;
+
+    // Hero headline: one line per entry, last line in the accent style.
+    const h1 = $(".js-hero-title");
+    h1.replaceChildren(...tx.heroTitle.map((line, i) =>
+      el("span", { class: "line" + (i === tx.heroTitle.length - 1 ? " accent" : ""), style: "--i:" + i, text: line + " " })));
+
+    // Rating
+    $$(".js-rating").forEach((a) => {
+      a.replaceChildren(stars(SHOP.rating.value), el("span", { text: fmt(tx.ratingLine) }), el("span", { class: "visually-hidden js-newtab", text: " " + tx.newTab }));
+    });
+    $$(".js-stars").forEach((n) => n.replaceChildren(stars(SHOP.rating.value)));
+    $$(".js-score").forEach((n) => { n.textContent = SHOP.rating.value; });
+
+    // Image slots
+    $$(".js-img").forEach((img) => {
+      const slot = SHOP.images[img.dataset.img];
+      if (img.getAttribute("src") !== slot.src) img.src = slot.src;
+      img.alt = slot[lang];
+    });
+
+    // Services
+    const other = lang === "ar" ? "en" : "ar";
+    $(".js-services").replaceChildren(...SHOP.services.map((s, i) => el("li", { class: "service reveal", style: "--d:" + (i % 3) * 80 + "ms" }, [
+      el("div", { class: "service-media" }, [
+        el("img", { src: s.image, alt: s[lang].alt, width: 480, height: 600, loading: "lazy", decoding: "async" }),
+      ]),
+      el("div", { class: "service-body" }, [
+        el("span", { class: "service-num", "aria-hidden": "true", text: String(i + 1).padStart(2, "0") }),
+        el("h3", { class: "service-name", text: s[lang].name }),
+        el("p", { class: "service-alt", lang: other, dir: other === "ar" ? "rtl" : "ltr", text: s[other].name }),
+        el("p", { class: "service-desc", text: s[lang].desc }),
+        el("a", { class: "service-link", href: waUrl(s[lang].ask), target: "_blank", rel: "noopener" }, [
+          el("span", { text: tx.quoteCta }),
+          el("span", { class: "visually-hidden", text: " – " + s[lang].name + " " + tx.newTab }),
+          useIcon("i-arrow", 18),
+        ]),
+      ]),
+    ])));
+
+    // Steps
+    $(".js-steps").replaceChildren(...tx.steps.map((s, i) => el("li", { class: "step reveal", style: "--d:" + i * 90 + "ms" }, [
+      el("div", { class: "step-mark" }, [el("span", { class: "step-num", text: String(i + 1) }), stepIcon(SHOP.stepIcons[i])]),
+      el("h3", { text: s.title }),
+      el("p", { text: s.text }),
+    ])));
+
+    // Reviews (kept in English — real quotes)
+    $(".js-reviews-list").replaceChildren(...SHOP.reviews.map((r, i) => el("li", { class: "review reveal", style: "--d:" + i * 90 + "ms" }, [
+      el("figure", null, [
+        quoteMark(),
+        el("blockquote", { lang: "en", dir: "ltr" }, [el("p", { text: r })]),
+        el("figcaption", { text: tx.reviewLabel }),
+      ]),
+    ])));
+
+    $$(".js-address").forEach((n) => n.replaceChildren(...tx.addressLines.map((l) => el("span", { text: l }))));
+    renderHours();
+
+    const map = $(".js-map");
+    if (!map.getAttribute("src")) map.setAttribute("src", SHOP.mapEmbedUrl);
+    map.title = tx.mapTitle;
+
+    $(".js-year").textContent = new Date().getFullYear();
+    $$("[data-lang]").forEach((b) => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+
+    renderStatus();
+    observeReveals();
+  }
+
+  function stepIcon(id) {
+    const s = el("span", { class: "step-icon", "aria-hidden": "true" });
+    s.innerHTML = '<svg viewBox="0 0 24 24" width="22" height="22"><use href="#' + id + '"/></svg>';
+    return s;
+  }
+
+  function quoteMark() {
+    const s = el("span", { class: "quote-mark", "aria-hidden": "true" });
+    s.innerHTML = '<svg viewBox="0 0 48 36" width="36" height="27"><path fill="currentColor" d="M0 36V22.4C0 9.6 6.2 2.2 18.6 0l2 4.6C13.8 6.6 10.6 10.4 10.2 16H19v20Zm27 0V22.4C27 9.6 33.2 2.2 45.6 0l2 4.6C40.8 6.6 37.6 10.4 37.2 16H46v20Z"/></svg>';
+    return s;
+  }
+
+  function applyLang(next, persist) {
+    lang = next;
+    root.lang = next;
+    root.dir = next === "ar" ? "rtl" : "ltr";
+    renderText();
+    if (persist) { try { localStorage.setItem(LANG_KEY, next); } catch (e) { /* ignore */ } }
+  }
+
+  /* ---------- Structured data (built from SHOP) ---------- */
+  function addJsonLd() {
+    const dayNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const data = {
+      "@context": "https://schema.org",
+      "@type": SHOP.schemaType,
+      name: SHOP.name,
+      url: SHOP.siteUrl,
+      image: SHOP.siteUrl + "images/og-image.jpg",
+      logo: SHOP.siteUrl + "images/logo.svg",
+      telephone: SHOP.phoneIntl,
+      address: {
+        "@type": "PostalAddress",
+        streetAddress: SHOP.address.street,
+        addressLocality: SHOP.address.city,
+        addressCountry: SHOP.address.country,
+      },
+      hasMap: SHOP.directionsUrl,
+      openingHoursSpecification: SHOP.hoursGroups.flatMap((g) => rangesOf(g.days[0]).map((r) => ({
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: g.days.map((d) => dayNames[d]),
+        opens: r[0],
+        closes: r[1] === "24:00" ? "23:59" : r[1],
+      }))),
+      aggregateRating: { "@type": "AggregateRating", ratingValue: SHOP.rating.value, bestRating: "5", reviewCount: String(SHOP.rating.count) },
+      makesOffer: SHOP.services.map((s) => ({ "@type": "Offer", itemOffered: { "@type": "Service", name: s.en.name } })),
+    };
+    document.head.append(el("script", { type: "application/ld+json", text: JSON.stringify(data) }));
+  }
+
+  /* ---------- Motion: reveal on scroll ---------- */
+  let io = null;
+  function observeReveals() {
+    if (reduceMotion || !("IntersectionObserver" in window)) {
+      $$(".reveal").forEach((n) => n.classList.add("is-in"));
+      return;
+    }
+    if (!io) {
+      io = new IntersectionObserver((entries) => {
+        entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("is-in"); io.unobserve(e.target); } });
+      }, { rootMargin: "0px 0px -8% 0px", threshold: 0.08 });
+    }
+    $$(".reveal:not(.is-in)").forEach((n) => io.observe(n));
+  }
+
+  /* ---------- Sticky header compacts on scroll ---------- */
+  const header = $(".site-header");
+  let ticking = false;
+  function onScroll() {
+    if (ticking) return;
+    ticking = true;
+    requestAnimationFrame(() => { header.classList.toggle("is-compact", window.scrollY > 24); ticking = false; });
+  }
+
+  /* ---------- Init ---------- */
+  if (!reduceMotion) root.classList.add("motion");
+  applyLang(lang, false);
+  addJsonLd();
+  $$("[data-lang]").forEach((b) => b.addEventListener("click", () => { if (b.dataset.lang !== lang) applyLang(b.dataset.lang, true); }));
+  window.addEventListener("scroll", onScroll, { passive: true });
+  onScroll();
+  setInterval(renderStatus, 60 * 1000);
+})();
